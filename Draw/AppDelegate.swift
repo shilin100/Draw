@@ -15,8 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setNavigationBarApperance()
         return true
+    }
+    
+    func setNavigationBarApperance()  {
+        UINavigationBar.appearance().tintColor = .white //前景色，按钮颜色
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.368627451, green: 0.2509803922, blue: 0.937254902, alpha: 1) //背景色，导航条背景色
+        UINavigationBar.appearance().isTranslucent = true // 导航条背景是否透明
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white] // 设置导航条标题颜色，还可以设置其它文字属性，只需要在里面添加对应的属性
+
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
