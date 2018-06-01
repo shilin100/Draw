@@ -19,6 +19,7 @@
 		9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18520C1478A00B80056 /* HomeViewController.swift */; };
 		9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18720C147A300B80056 /* AwardViewController.swift */; };
 		9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18920C147AD00B80056 /* MineViewController.swift */; };
+		9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9D86A18520C1478A00B80056 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D86A18720C147A300B80056 /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
 		9D86A18920C147AD00B80056 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 				9D86A18520C1478A00B80056 /* HomeViewController.swift */,
 				9D86A18720C147A300B80056 /* AwardViewController.swift */,
 				9D86A18920C147AD00B80056 /* MineViewController.swift */,
+				9D86A18B20C14F8F00B80056 /* View */,
 				9D1B886B20B938AD00115E9F /* Main.storyboard */,
 				9D1B886E20B938AF00115E9F /* Assets.xcassets */,
 				9D1B887020B938AF00115E9F /* LaunchScreen.storyboard */,
@@ -169,6 +172,14 @@
 				9D1B888920B938AF00115E9F /* Info.plist */,
 			);
 			path = DrawUITests;
+			sourceTree = "<group>";
+		};
+		9D86A18B20C14F8F00B80056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +446,7 @@
 				9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,
+				9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
