@@ -20,6 +20,10 @@
 		9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18720C147A300B80056 /* AwardViewController.swift */; };
 		9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18920C147AD00B80056 /* MineViewController.swift */; };
 		9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */; };
+		9D86A18F20C27C5A00B80056 /* MyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18E20C27C5A00B80056 /* MyOrderViewController.swift */; };
+		9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */; };
+		9D86A19420C2975A00B80056 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */; };
+		9D86A19A20C2A64D00B80056 /* BaceNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		9D86A18720C147A300B80056 /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
 		9D86A18920C147AD00B80056 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		9D86A18E20C27C5A00B80056 /* MyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderViewController.swift; sourceTree = "<group>"; };
+		9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceNavigationViewController.swift; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,9 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				9D1B886720B938AD00115E9F /* AppDelegate.swift */,
+				9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */,
 				9D86A18520C1478A00B80056 /* HomeViewController.swift */,
 				9D86A18720C147A300B80056 /* AwardViewController.swift */,
-				9D86A18920C147AD00B80056 /* MineViewController.swift */,
+				9D86A19020C27C5F00B80056 /* Mine */,
 				9D86A18B20C14F8F00B80056 /* View */,
 				9D1B886B20B938AD00115E9F /* Main.storyboard */,
 				9D1B886E20B938AF00115E9F /* Assets.xcassets */,
@@ -178,8 +187,19 @@
 			isa = PBXGroup;
 			children = (
 				9D86A18C20C14FA600B80056 /* MineTableViewCell.swift */,
+				9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */,
+				9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9D86A19020C27C5F00B80056 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9D86A18920C147AD00B80056 /* MineViewController.swift */,
+				9D86A18E20C27C5A00B80056 /* MyOrderViewController.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +312,7 @@
 			files = (
 				9D1B887220B938AF00115E9F /* LaunchScreen.storyboard in Resources */,
 				9D1B886F20B938AF00115E9F /* Assets.xcassets in Resources */,
+				9D86A19420C2975A00B80056 /* OrderTableViewCell.xib in Resources */,
 				9D1B886D20B938AD00115E9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +379,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Draw/Pods-Draw-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/CGFloatLiteral/CGFloatLiteral.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
@@ -387,6 +409,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CGFloatLiteral.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
@@ -443,7 +466,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1B886820B938AD00115E9F /* AppDelegate.swift in Sources */,
+				9D86A18F20C27C5A00B80056 /* MyOrderViewController.swift in Sources */,
 				9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */,
+				9D86A19A20C2A64D00B80056 /* BaceNavigationViewController.swift in Sources */,
+				9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,
 				9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */,

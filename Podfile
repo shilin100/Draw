@@ -23,6 +23,7 @@ pod 'Kingfisher'
 #pod 'FLEX'
 pod 'Toast'
 pod 'DZNEmptyDataSet'
+pod 'BetterSegmentedControl', '~> 0.9'
 
 # Rx
 pod 'ReactorKit'

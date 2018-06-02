@@ -1,17 +1,15 @@
 //
-//  MineTableViewCell.swift
+//  OrderTableViewCell.swift
 //  Draw
 //
-//  Created by 123 on 2018/6/1.
+//  Created by 123 on 2018/6/2.
 //  Copyright © 2018年 shilin. All rights reserved.
 //
 
 import UIKit
 
-class MineTableViewCell: UITableViewCell {
-    @IBOutlet weak var img: UIImageView!
-    
-    @IBOutlet weak var titleLabel: UILabel!
+class OrderTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +20,5 @@ class MineTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

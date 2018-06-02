@@ -3,6 +3,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - Alamofire (4.7.2)
+  - BetterSegmentedControl (0.9)
   - CGFloatLiteral (0.4.0)
   - Differentiator (3.0.2)
   - DZNEmptyDataSet (1.8.1)
@@ -53,6 +54,7 @@ PODS:
 DEPENDENCIES:
   - Action
   - Alamofire
+  - BetterSegmentedControl (~> 0.9)
   - CGFloatLiteral (~> 0.2)
   - DZNEmptyDataSet
   - IQKeyboardManagerSwift
@@ -81,6 +83,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Action
     - Alamofire
+    - BetterSegmentedControl
     - CGFloatLiteral
     - Differentiator
     - DZNEmptyDataSet
@@ -109,6 +112,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  BetterSegmentedControl: 40b2b6a08bbc59663149624d1b5235efa8d43a3c
   CGFloatLiteral: 2ab558b74124b584dd023a35b7e41795a61d8140
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
@@ -134,6 +138,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   TZImagePickerController: 2a8f41ba058e215bc9b699ade241fdbcc910c2bd
 
-PODFILE CHECKSUM: bdd88d6a986b6edb2f04fbeec45435d80f6c3aa9
+PODFILE CHECKSUM: bddab03596cca27a745ec91f393106c3fe9b1e81
 
 COCOAPODS: 1.5.0
