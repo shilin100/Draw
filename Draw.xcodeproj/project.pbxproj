@@ -23,7 +23,7 @@
 		9D86A18F20C27C5A00B80056 /* MyOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18E20C27C5A00B80056 /* MyOrderViewController.swift */; };
 		9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */; };
 		9D86A19420C2975A00B80056 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */; };
-		9D86A19A20C2A64D00B80056 /* BaceNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */; };
+		9D86A19A20C2A64D00B80056 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A19920C2A64D00B80056 /* BaseNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 		9D86A18E20C27C5A00B80056 /* MyOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderViewController.swift; sourceTree = "<group>"; };
 		9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
-		9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaceNavigationViewController.swift; sourceTree = "<group>"; };
+		9D86A19920C2A64D00B80056 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1B886720B938AD00115E9F /* AppDelegate.swift */,
-				9D86A19920C2A64D00B80056 /* BaceNavigationViewController.swift */,
+				9D86A19920C2A64D00B80056 /* BaseNavigationViewController.swift */,
 				9D86A18520C1478A00B80056 /* HomeViewController.swift */,
 				9D86A18720C147A300B80056 /* AwardViewController.swift */,
 				9D86A19020C27C5F00B80056 /* Mine */,
@@ -468,7 +468,7 @@
 				9D1B886820B938AD00115E9F /* AppDelegate.swift in Sources */,
 				9D86A18F20C27C5A00B80056 /* MyOrderViewController.swift in Sources */,
 				9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */,
-				9D86A19A20C2A64D00B80056 /* BaceNavigationViewController.swift in Sources */,
+				9D86A19A20C2A64D00B80056 /* BaseNavigationViewController.swift in Sources */,
 				9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,

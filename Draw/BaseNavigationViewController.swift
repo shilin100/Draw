@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaceNavigationViewController: UINavigationController {
+class BaseNavigationViewController: UINavigationController {
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if self.viewControllers.count > 0 {

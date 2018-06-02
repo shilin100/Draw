@@ -218,7 +218,7 @@
         <!--首页-->
         <scene sceneID="mHL-1W-B3u">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WMN-Nt-1cp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WMN-Nt-1cp" customClass="BaseNavigationViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="首页_un" selectedImage="首页" id="c0m-5N-Enq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCj-5B-mh5">
@@ -237,7 +237,7 @@
         <!--开奖-->
         <scene sceneID="taa-Do-gLZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EBa-75-Ir9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EBa-75-Ir9" customClass="BaseNavigationViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="开奖" image="奖杯_un" selectedImage="奖杯" id="MPn-kV-gdc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vgG-Tn-97J">
@@ -256,7 +256,7 @@
         <!--走势-->
         <scene sceneID="vei-3o-cpt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wlP-BW-ues" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wlP-BW-ues" customClass="BaseNavigationViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="走势" image="走势_un" selectedImage="走势" id="Tx2-5m-EfU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z2F-UO-1MW">
@@ -275,7 +275,7 @@
         <!--我的-->
         <scene sceneID="PKd-Ng-FdS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgb-Fg-F40" customClass="BaceNavigationViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgb-Fg-F40" customClass="BaseNavigationViewController" customModule="Draw" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="我的_un" selectedImage="我的" id="xdV-UD-hlm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SIP-xW-aSX">
