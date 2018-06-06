@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+
 
 class MineViewController: UIViewController {
 
@@ -88,6 +90,24 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             break
+        case 2:
+            if indexPath.row == 0{
+                SVProgressHUD.show(withStatus: "清除中")
+                let queue1 = DispatchQueue(label: "queue1")
+                // 让其延迟0.5秒操作
+                queue1.asyncAfter(deadline: .now() + 0.5) {
+                    SVProgressHUD.showSuccess(withStatus: "清除成功")
+                    SVProgressHUD.dismiss(withDelay: 0.5)
+                }
+
+            }
+            if indexPath.row == 1 {
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AboutUsViewController")
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 3:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingsTableViewController")
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             break
         }

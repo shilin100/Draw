@@ -24,6 +24,8 @@ pod 'Kingfisher'
 pod 'Toast'
 pod 'DZNEmptyDataSet'
 pod 'BetterSegmentedControl', '~> 0.9'
+pod 'SDCycleScrollView'
+
 
 # Rx
 pod 'ReactorKit'
