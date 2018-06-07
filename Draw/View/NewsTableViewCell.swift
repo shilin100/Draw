@@ -14,10 +14,12 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var img: UIImageView!
+    public var url : String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization code        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

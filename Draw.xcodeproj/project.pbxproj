@@ -29,6 +29,7 @@
 		9D86A1AF20C7D78400B80056 /* SLTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1AE20C7D78400B80056 /* SLTool.swift */; };
 		9D86A1B120C7E30D00B80056 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */; };
 		9D86A1BB20C7E84200B80056 /* NewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BA20C7E84200B80056 /* NewsRequest.swift */; };
+		9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BC20C9190400B80056 /* WebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		9D86A1AE20C7D78400B80056 /* SLTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTool.swift; sourceTree = "<group>"; };
 		9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		9D86A1BA20C7E84200B80056 /* NewsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequest.swift; sourceTree = "<group>"; };
+		9D86A1BC20C9190400B80056 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				9D86A18520C1478A00B80056 /* HomeViewController.swift */,
+				9D86A1BC20C9190400B80056 /* WebViewViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
@@ -482,6 +486,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
@@ -516,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */,
 				9D1B886820B938AD00115E9F /* AppDelegate.swift in Sources */,
 				9D86A19C20C513FC00B80056 /* AboutUsViewController.swift in Sources */,
 				9D86A1B120C7E30D00B80056 /* NewsTableViewCell.swift in Sources */,

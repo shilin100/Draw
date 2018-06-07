@@ -44,6 +44,7 @@ pod 'Then'
 pod 'CGFloatLiteral', '~> 0.2'
 pod 'SwiftyBeaver'
 pod 'LeanCloud'
+pod 'SwiftyJSON'
 
 
   target 'DrawTests' do
