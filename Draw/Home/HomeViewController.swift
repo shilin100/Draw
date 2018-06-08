@@ -12,6 +12,7 @@ import RxSwift
 import Moya
 import SwiftyJSON
 import SDWebImage
+import LeanCloud
 
 class HomeViewController: UIViewController {
     let disposeBag = DisposeBag()
@@ -46,9 +47,18 @@ class HomeViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
-
         
+        loginVerfy()
     }
+    
+    func loginVerfy() {
+        if UserDefaults.standard.object(forKey: "uid") == nil {
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+            self.present(vc, animated: true, completion: nil)
+
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

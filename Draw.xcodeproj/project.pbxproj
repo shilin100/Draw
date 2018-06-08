@@ -16,6 +16,9 @@
 		9D1B887220B938AF00115E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B887020B938AF00115E9F /* LaunchScreen.storyboard */; };
 		9D1B887D20B938AF00115E9F /* DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B887C20B938AF00115E9F /* DrawTests.swift */; };
 		9D1B888820B938AF00115E9F /* DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B888720B938AF00115E9F /* DrawUITests.swift */; };
+		9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6420CA82AD00B03E67 /* LoginViewController.swift */; };
+		9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6620CA82C000B03E67 /* RegisterViewController.swift */; };
+		9D374F6920CA82CE00B03E67 /* ChangePSWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */; };
 		9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18520C1478A00B80056 /* HomeViewController.swift */; };
 		9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18720C147A300B80056 /* AwardViewController.swift */; };
 		9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18920C147AD00B80056 /* MineViewController.swift */; };
@@ -30,6 +33,7 @@
 		9D86A1B120C7E30D00B80056 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */; };
 		9D86A1BB20C7E84200B80056 /* NewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BA20C7E84200B80056 /* NewsRequest.swift */; };
 		9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BC20C9190400B80056 /* WebViewViewController.swift */; };
+		9D86A1C120CA547800B80056 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1C020CA547800B80056 /* RequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,9 @@
 		9D1B888320B938AF00115E9F /* DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1B888720B938AF00115E9F /* DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUITests.swift; sourceTree = "<group>"; };
 		9D1B888920B938AF00115E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D374F6420CA82AD00B03E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D374F6620CA82C000B03E67 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePSWViewController.swift; sourceTree = "<group>"; };
 		9D86A18520C1478A00B80056 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D86A18720C147A300B80056 /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
 		9D86A18920C147AD00B80056 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +90,9 @@
 		9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		9D86A1BA20C7E84200B80056 /* NewsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequest.swift; sourceTree = "<group>"; };
 		9D86A1BC20C9190400B80056 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		9D86A1BE20CA547600B80056 /* Draw-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Draw-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D86A1BF20CA547700B80056 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		9D86A1C020CA547800B80056 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -168,6 +178,7 @@
 				9D86A1AB20C7D65C00B80056 /* Home */,
 				9D86A1AC20C7D75900B80056 /* Award */,
 				9D86A19020C27C5F00B80056 /* Mine */,
+				9D374F6320CA828D00B03E67 /* Login */,
 				9D86A18B20C14F8F00B80056 /* View */,
 				9D86A1A120C7B1D400B80056 /* Venders */,
 				9D86A1AD20C7D76A00B80056 /* Tools */,
@@ -195,6 +206,16 @@
 				9D1B888920B938AF00115E9F /* Info.plist */,
 			);
 			path = DrawUITests;
+			sourceTree = "<group>";
+		};
+		9D374F6320CA828D00B03E67 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D374F6420CA82AD00B03E67 /* LoginViewController.swift */,
+				9D374F6620CA82C000B03E67 /* RegisterViewController.swift */,
+				9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		9D86A18B20C14F8F00B80056 /* View */ = {
@@ -248,6 +269,9 @@
 			children = (
 				9D86A1AE20C7D78400B80056 /* SLTool.swift */,
 				9D86A1BA20C7E84200B80056 /* NewsRequest.swift */,
+				9D86A1BF20CA547700B80056 /* RequestManager.h */,
+				9D86A1C020CA547800B80056 /* RequestManager.m */,
+				9D86A1BE20CA547600B80056 /* Draw-Bridging-Header.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -324,6 +348,7 @@
 				TargetAttributes = {
 					9D1B886320B938AD00115E9F = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					9D1B887720B938AF00115E9F = {
 						CreatedOnToolsVersion = 9.3;
@@ -427,6 +452,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Draw/Pods-Draw-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
@@ -460,6 +486,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
@@ -521,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D86A1C120CA547800B80056 /* RequestManager.m in Sources */,
 				9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */,
 				9D1B886820B938AD00115E9F /* AppDelegate.swift in Sources */,
 				9D86A19C20C513FC00B80056 /* AboutUsViewController.swift in Sources */,
@@ -532,9 +560,12 @@
 				9D86A19A20C2A64D00B80056 /* BaseNavigationViewController.swift in Sources */,
 				9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
+				9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */,
+				9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,
 				9D86A1BB20C7E84200B80056 /* NewsRequest.swift in Sources */,
 				9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */,
+				9D374F6920CA82CE00B03E67 /* ChangePSWViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,6 +739,7 @@
 			baseConfigurationReference = 7D6AB0357DE5C8A3F3722314 /* Pods-Draw.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP487TEY6T;
 				INFOPLIST_FILE = Draw/Info.plist;
@@ -718,6 +750,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SL.Draw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Draw/Tools/Draw-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -728,6 +762,7 @@
 			baseConfigurationReference = 67838E8D739CC2A58EC02C3A /* Pods-Draw.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QP487TEY6T;
 				INFOPLIST_FILE = Draw/Info.plist;
@@ -738,6 +773,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SL.Draw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Draw/Tools/Draw-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

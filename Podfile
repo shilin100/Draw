@@ -10,6 +10,7 @@ pod 'Alamofire'
 pod 'Moya'
 pod 'Moya/RxSwift'
 #pod 'ReachabilitySwift'
+pod 'AFNetworking'
 
 # Ui
 pod 'SVProgressHUD'

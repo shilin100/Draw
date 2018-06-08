@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LeanCloud
+
 
 let kScreenWidth = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height
@@ -18,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        LeanCloud.initialize(applicationID: "vJofpL6dCY46y6tQJekfbIHi-gzGzoHsz", applicationKey: "LoiHH1yEVVi7Ht4GQkTG3075")
         
         setNavigationBarApperance()
         return true
