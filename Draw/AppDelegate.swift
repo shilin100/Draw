@@ -8,6 +8,7 @@
 
 import UIKit
 import LeanCloud
+import IQKeyboardManager
 
 
 let kScreenWidth = UIScreen.main.bounds.width
@@ -22,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         LeanCloud.initialize(applicationID: "vJofpL6dCY46y6tQJekfbIHi-gzGzoHsz", applicationKey: "LoiHH1yEVVi7Ht4GQkTG3075")
-        
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+//        UserDefaults.standard.removeObject(forKey: "uid")
         setNavigationBarApperance()
         return true
     }

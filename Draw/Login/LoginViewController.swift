@@ -25,12 +25,12 @@ class LoginViewController: UIViewController {
             LCUser.logIn(username: username.text!, password: psw.text!) { result in
                 switch result {
                 case .success(let user):
-                    UserDefaults.standard.set(user.objectId, forKey: "uid")
+                    UserDefaults.standard.set(user.objectId?.stringValue, forKey: "uid")
                     self.dismiss(animated: true, completion: nil)
                     break
                 case .failure(let error):
                     print(error)
-//                    SVProgressHUD.showError(withStatus: error.userInfo)
+                    SVProgressHUD.showError(withStatus: error.reason)
                 }
                 
             }

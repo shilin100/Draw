@@ -3,3 +3,5 @@
 //
 
 #import "RequestManager.h"
+#import "CXLotteryOpenTrendVc.h"
+

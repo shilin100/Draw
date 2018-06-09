@@ -17,7 +17,8 @@ import LeanCloud
 class HomeViewController: UIViewController {
     let disposeBag = DisposeBag()
     var newDataArr = [Dictionary<String, Any>]()
-    
+    var ssqDataArr = [Dictionary<String, Any>]()
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cycleview: SDCycleScrollView!
     @IBOutlet weak var drawView: UIView!
@@ -48,16 +49,24 @@ class HomeViewController: UIViewController {
             }
         }
         
-        loginVerfy()
+        DouBanProvider.request(.ssqList) { result in
+            if case let .success(response) = result {
+                //解析数据
+                let data = try? response.mapJSON()
+                let json = JSON(data!)
+                let dic = json.dictionaryObject
+                
+                self.ssqDataArr = dic?["data"] as! [Dictionary<String, Any>]
+                //刷新表格数据
+                
+
+            }
+        }
+
+        SLTool.loginVerfy()
+
     }
     
-    func loginVerfy() {
-        if UserDefaults.standard.object(forKey: "uid") == nil {
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
-            self.present(vc, animated: true, completion: nil)
-
-        }
-    }
     
 
     override func didReceiveMemoryWarning() {

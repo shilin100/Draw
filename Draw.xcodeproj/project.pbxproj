@@ -19,6 +19,22 @@
 		9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6420CA82AD00B03E67 /* LoginViewController.swift */; };
 		9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6620CA82C000B03E67 /* RegisterViewController.swift */; };
 		9D374F6920CA82CE00B03E67 /* ChangePSWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */; };
+		9D5CA62F20CB7CB6001363B3 /* DSTrendChartGainListInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62020CB7CB0001363B3 /* DSTrendChartGainListInfo.m */; };
+		9D5CA63020CB7CB6001363B3 /* DSTrendChartGainDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62220CB7CB1001363B3 /* DSTrendChartGainDataInfo.m */; };
+		9D5CA63120CB7CB6001363B3 /* TTAppcationInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62320CB7CB1001363B3 /* TTAppcationInstance.m */; };
+		9D5CA63220CB7CB6001363B3 /* DSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62620CB7CB3001363B3 /* DSView.m */; };
+		9D5CA63320CB7CB6001363B3 /* TTBetSSCInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62820CB7CB3001363B3 /* TTBetSSCInfo.m */; };
+		9D5CA63420CB7CB6001363B3 /* DSTrendChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62C20CB7CB5001363B3 /* DSTrendChartView.m */; };
+		9D5CA63520CB7CB6001363B3 /* DSDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA62E20CB7CB5001363B3 /* DSDataObject.m */; };
+		9D5CA63820CB7CC2001363B3 /* CXLotteryOpenTrendVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA63720CB7CC2001363B3 /* CXLotteryOpenTrendVc.m */; };
+		9D5CA63C20CB7D61001363B3 /* CXSSQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA63B20CB7D60001363B3 /* CXSSQModel.m */; };
+		9D5CA63F20CB7EBC001363B3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA63D20CB7EBB001363B3 /* UIBarButtonItem+Item.m */; };
+		9D5CA64220CB7F0C001363B3 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA64120CB7F0C001363B3 /* UIView+Extension.m */; };
+		9D5CA64620CB80D0001363B3 /* JAJNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA64520CB80D0001363B3 /* JAJNetwork.m */; };
+		9D5CA64A20CB80E1001363B3 /* CXNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA64820CB80E0001363B3 /* CXNetworkTool.m */; };
+		9D5CA65220CBB50C001363B3 /* NumberLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA65120CBB50C001363B3 /* NumberLibViewController.swift */; };
+		9D5CA68320CBD06E001363B3 /* ChoosBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA68220CBD06E001363B3 /* ChoosBallViewController.swift */; };
+		9D5CA68520CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5CA68420CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift */; };
 		9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18520C1478A00B80056 /* HomeViewController.swift */; };
 		9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18720C147A300B80056 /* AwardViewController.swift */; };
 		9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A18920C147AD00B80056 /* MineViewController.swift */; };
@@ -76,6 +92,41 @@
 		9D374F6420CA82AD00B03E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D374F6620CA82C000B03E67 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePSWViewController.swift; sourceTree = "<group>"; };
+		9D5CA62020CB7CB0001363B3 /* DSTrendChartGainListInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTrendChartGainListInfo.m; sourceTree = "<group>"; };
+		9D5CA62120CB7CB1001363B3 /* DSDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDataObject.h; sourceTree = "<group>"; };
+		9D5CA62220CB7CB1001363B3 /* DSTrendChartGainDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTrendChartGainDataInfo.m; sourceTree = "<group>"; };
+		9D5CA62320CB7CB1001363B3 /* TTAppcationInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAppcationInstance.m; sourceTree = "<group>"; };
+		9D5CA62420CB7CB2001363B3 /* DSTrendChartGainListInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTrendChartGainListInfo.h; sourceTree = "<group>"; };
+		9D5CA62520CB7CB2001363B3 /* DSTrendChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTrendChartView.h; sourceTree = "<group>"; };
+		9D5CA62620CB7CB3001363B3 /* DSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSView.m; sourceTree = "<group>"; };
+		9D5CA62720CB7CB3001363B3 /* TTAppcationInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAppcationInstance.h; sourceTree = "<group>"; };
+		9D5CA62820CB7CB3001363B3 /* TTBetSSCInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTBetSSCInfo.m; sourceTree = "<group>"; };
+		9D5CA62920CB7CB4001363B3 /* FEPrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEPrecompile.h; sourceTree = "<group>"; };
+		9D5CA62A20CB7CB4001363B3 /* DSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSView.h; sourceTree = "<group>"; };
+		9D5CA62B20CB7CB4001363B3 /* TTBetSSCInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBetSSCInfo.h; sourceTree = "<group>"; };
+		9D5CA62C20CB7CB5001363B3 /* DSTrendChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTrendChartView.m; sourceTree = "<group>"; };
+		9D5CA62D20CB7CB5001363B3 /* DSTrendChartGainDataInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTrendChartGainDataInfo.h; sourceTree = "<group>"; };
+		9D5CA62E20CB7CB5001363B3 /* DSDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDataObject.m; sourceTree = "<group>"; };
+		9D5CA63620CB7CC1001363B3 /* CXLotteryOpenTrendVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXLotteryOpenTrendVc.h; sourceTree = "<group>"; };
+		9D5CA63720CB7CC2001363B3 /* CXLotteryOpenTrendVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXLotteryOpenTrendVc.m; sourceTree = "<group>"; };
+		9D5CA63920CB7D12001363B3 /* FEPrecompile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FEPrecompile.h; path = ../../../../Downloads/temp/Lottery/Lottery/Classes/LotteryRecord/LotteryOpenTrend/FEPrecompile.h; sourceTree = "<group>"; };
+		9D5CA63A20CB7D60001363B3 /* CXSSQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXSSQModel.h; sourceTree = "<group>"; };
+		9D5CA63B20CB7D60001363B3 /* CXSSQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXSSQModel.m; sourceTree = "<group>"; };
+		9D5CA63D20CB7EBB001363B3 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		9D5CA63E20CB7EBB001363B3 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		9D5CA64020CB7F0B001363B3 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9D5CA64120CB7F0C001363B3 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		9D5CA64320CB7F3C001363B3 /* CXLottery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXLottery.h; sourceTree = "<group>"; };
+		9D5CA64420CB80CF001363B3 /* JAJNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAJNetwork.h; sourceTree = "<group>"; };
+		9D5CA64520CB80D0001363B3 /* JAJNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAJNetwork.m; sourceTree = "<group>"; };
+		9D5CA64720CB80E0001363B3 /* CXNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXNetworkTool.h; sourceTree = "<group>"; };
+		9D5CA64820CB80E0001363B3 /* CXNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXNetworkTool.m; sourceTree = "<group>"; };
+		9D5CA64920CB80E1001363B3 /* CXNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXNetworkConfig.h; sourceTree = "<group>"; };
+		9D5CA64C20CB80FE001363B3 /* FEPrecompile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FEPrecompile.h; path = ../../../../../Downloads/temp/Lottery/Lottery/Classes/LotteryRecord/LotteryOpenTrend/FEPrecompile.h; sourceTree = "<group>"; };
+		9D5CA65020CB837A001363B3 /* FEPrecompile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FEPrecompile.h; path = ../../../../../Downloads/temp/Lottery/Lottery/Classes/LotteryRecord/LotteryOpenTrend/FEPrecompile.h; sourceTree = "<group>"; };
+		9D5CA65120CBB50C001363B3 /* NumberLibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberLibViewController.swift; sourceTree = "<group>"; };
+		9D5CA68220CBD06E001363B3 /* ChoosBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosBallViewController.swift; sourceTree = "<group>"; };
+		9D5CA68420CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBallCollectionViewCell.swift; sourceTree = "<group>"; };
 		9D86A18520C1478A00B80056 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9D86A18720C147A300B80056 /* AwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardViewController.swift; sourceTree = "<group>"; };
 		9D86A18920C147AD00B80056 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +226,7 @@
 			children = (
 				9D1B886720B938AD00115E9F /* AppDelegate.swift */,
 				9D86A19920C2A64D00B80056 /* BaseNavigationViewController.swift */,
+				9D5CA61F20CB7C92001363B3 /* Trend */,
 				9D86A1AB20C7D65C00B80056 /* Home */,
 				9D86A1AC20C7D75900B80056 /* Award */,
 				9D86A19020C27C5F00B80056 /* Mine */,
@@ -218,6 +270,53 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		9D5CA61F20CB7C92001363B3 /* Trend */ = {
+			isa = PBXGroup;
+			children = (
+				9D5CA63620CB7CC1001363B3 /* CXLotteryOpenTrendVc.h */,
+				9D5CA63720CB7CC2001363B3 /* CXLotteryOpenTrendVc.m */,
+				9D5CA64B20CB80E9001363B3 /* Other */,
+				9D5CA63920CB7D12001363B3 /* FEPrecompile.h */,
+			);
+			path = Trend;
+			sourceTree = "<group>";
+		};
+		9D5CA64B20CB80E9001363B3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9D5CA65020CB837A001363B3 /* FEPrecompile.h */,
+				9D5CA64920CB80E1001363B3 /* CXNetworkConfig.h */,
+				9D5CA64720CB80E0001363B3 /* CXNetworkTool.h */,
+				9D5CA64820CB80E0001363B3 /* CXNetworkTool.m */,
+				9D5CA64420CB80CF001363B3 /* JAJNetwork.h */,
+				9D5CA64520CB80D0001363B3 /* JAJNetwork.m */,
+				9D5CA64320CB7F3C001363B3 /* CXLottery.h */,
+				9D5CA63E20CB7EBB001363B3 /* UIBarButtonItem+Item.h */,
+				9D5CA63D20CB7EBB001363B3 /* UIBarButtonItem+Item.m */,
+				9D5CA64020CB7F0B001363B3 /* UIView+Extension.h */,
+				9D5CA62520CB7CB2001363B3 /* DSTrendChartView.h */,
+				9D5CA62C20CB7CB5001363B3 /* DSTrendChartView.m */,
+				9D5CA64120CB7F0C001363B3 /* UIView+Extension.m */,
+				9D5CA62920CB7CB4001363B3 /* FEPrecompile.h */,
+				9D5CA64C20CB80FE001363B3 /* FEPrecompile.h */,
+				9D5CA63A20CB7D60001363B3 /* CXSSQModel.h */,
+				9D5CA63B20CB7D60001363B3 /* CXSSQModel.m */,
+				9D5CA62B20CB7CB4001363B3 /* TTBetSSCInfo.h */,
+				9D5CA62820CB7CB3001363B3 /* TTBetSSCInfo.m */,
+				9D5CA62720CB7CB3001363B3 /* TTAppcationInstance.h */,
+				9D5CA62320CB7CB1001363B3 /* TTAppcationInstance.m */,
+				9D5CA62A20CB7CB4001363B3 /* DSView.h */,
+				9D5CA62620CB7CB3001363B3 /* DSView.m */,
+				9D5CA62120CB7CB1001363B3 /* DSDataObject.h */,
+				9D5CA62E20CB7CB5001363B3 /* DSDataObject.m */,
+				9D5CA62420CB7CB2001363B3 /* DSTrendChartGainListInfo.h */,
+				9D5CA62220CB7CB1001363B3 /* DSTrendChartGainDataInfo.m */,
+				9D5CA62020CB7CB0001363B3 /* DSTrendChartGainListInfo.m */,
+				9D5CA62D20CB7CB5001363B3 /* DSTrendChartGainDataInfo.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		9D86A18B20C14F8F00B80056 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +324,7 @@
 				9D86A19120C2975A00B80056 /* OrderTableViewCell.swift */,
 				9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */,
 				9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */,
+				9D5CA68420CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,6 +352,8 @@
 			children = (
 				9D86A18520C1478A00B80056 /* HomeViewController.swift */,
 				9D86A1BC20C9190400B80056 /* WebViewViewController.swift */,
+				9D5CA65120CBB50C001363B3 /* NumberLibViewController.swift */,
+				9D5CA68220CBD06E001363B3 /* ChoosBallViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -453,70 +555,52 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Draw/Pods-Draw-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
-				"${BUILT_PRODUCTS_DIR}/CGFloatLiteral/CGFloatLiteral.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/ReusableKit/ReusableKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/TZImagePickerController/TZImagePickerController.framework",
-				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
-				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CGFloatLiteral.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReusableKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TZImagePickerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -548,21 +632,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5CA68520CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift in Sources */,
+				9D5CA63320CB7CB6001363B3 /* TTBetSSCInfo.m in Sources */,
 				9D86A1C120CA547800B80056 /* RequestManager.m in Sources */,
 				9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */,
+				9D5CA68320CBD06E001363B3 /* ChoosBallViewController.swift in Sources */,
+				9D5CA63820CB7CC2001363B3 /* CXLotteryOpenTrendVc.m in Sources */,
 				9D1B886820B938AD00115E9F /* AppDelegate.swift in Sources */,
+				9D5CA63F20CB7EBC001363B3 /* UIBarButtonItem+Item.m in Sources */,
 				9D86A19C20C513FC00B80056 /* AboutUsViewController.swift in Sources */,
 				9D86A1B120C7E30D00B80056 /* NewsTableViewCell.swift in Sources */,
+				9D5CA63C20CB7D61001363B3 /* CXSSQModel.m in Sources */,
+				9D5CA64220CB7F0C001363B3 /* UIView+Extension.m in Sources */,
 				9D86A1AF20C7D78400B80056 /* SLTool.swift in Sources */,
+				9D5CA64A20CB80E1001363B3 /* CXNetworkTool.m in Sources */,
 				9D86A18F20C27C5A00B80056 /* MyOrderViewController.swift in Sources */,
 				9D86A1A020C519A400B80056 /* SettingsTableViewController.swift in Sources */,
 				9D86A18820C147A300B80056 /* AwardViewController.swift in Sources */,
 				9D86A19A20C2A64D00B80056 /* BaseNavigationViewController.swift in Sources */,
+				9D5CA63120CB7CB6001363B3 /* TTAppcationInstance.m in Sources */,
 				9D86A19320C2975A00B80056 /* OrderTableViewCell.swift in Sources */,
+				9D5CA62F20CB7CB6001363B3 /* DSTrendChartGainListInfo.m in Sources */,
+				9D5CA63420CB7CB6001363B3 /* DSTrendChartView.m in Sources */,
+				9D5CA63220CB7CB6001363B3 /* DSView.m in Sources */,
+				9D5CA64620CB80D0001363B3 /* JAJNetwork.m in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
+				9D5CA65220CBB50C001363B3 /* NumberLibViewController.swift in Sources */,
+				9D5CA63520CB7CB6001363B3 /* DSDataObject.m in Sources */,
 				9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */,
 				9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,
+				9D5CA63020CB7CB6001363B3 /* DSTrendChartGainDataInfo.m in Sources */,
 				9D86A1BB20C7E84200B80056 /* NewsRequest.swift in Sources */,
 				9D86A18D20C14FA600B80056 /* MineTableViewCell.swift in Sources */,
 				9D374F6920CA82CE00B03E67 /* ChangePSWViewController.swift in Sources */,

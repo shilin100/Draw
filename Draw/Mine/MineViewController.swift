@@ -82,6 +82,7 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let cell = tableView.cellForRow(at: indexPath)
+        
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.section {
         case 0:
@@ -89,6 +90,13 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
                 let vc = MyOrderViewController()
                 self.navigationController?.pushViewController(vc, animated: true)
             }
+            break
+        case 1:
+            if(indexPath.row == 1){
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangePSWViewController")
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+
             break
         case 2:
             if indexPath.row == 0{

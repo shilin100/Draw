@@ -21,6 +21,8 @@ static AFHTTPSessionManager *manager ;
     });
     return manager;
 }
+
+
 /**
  获取新闻
  

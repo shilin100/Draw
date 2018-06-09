@@ -11,6 +11,7 @@ let DouBanProvider = MoyaProvider<DouBan>()
 public enum DouBan {
     case channels  //获取频道列表
     case playlist(String) //获取歌曲
+    case ssqList
 }
 
 //请求配置
@@ -22,6 +23,9 @@ extension DouBan: TargetType {
             return URL(string: "http://120.76.205.241:8000/news/qihoo?kw=%E5%A4%B4%E6%9D%A1&site=qq.com&apikey=GSbdb4NF8HNhr3oQBX656LHsK6VKi3id9mdWnGuy0CSABsEPD7nI5ubmr37Y6HHI")!
         case .playlist(_):
             return URL(string: "https://douban.fm")!
+        case .ssqList:
+            return URL(string: "http://f.apiplus.net/ssq-20.json")!
+
         }
     }
     
@@ -30,6 +34,9 @@ extension DouBan: TargetType {
         switch self {
         case .channels:
             return ""
+        case .ssqList:
+            return ""
+
         case .playlist(_):
             return "/j/mine/playlist"
         }

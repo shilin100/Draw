@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LeanCloud
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
 
@@ -21,6 +23,30 @@ class RegisterViewController: UIViewController {
     }
 
     @IBAction func registerAction(_ sender: Any) {
+        
+        if username.text!.count > 0 , psw.text!.count > 0 , phone.text!.count > 0{
+            let randomUser = LCUser()
+            
+            randomUser.username = LCString(username.text!)
+            randomUser.password = LCString(psw.text!)
+            randomUser.mobilePhoneNumber = LCString(phone.text!)
+
+            randomUser.signUp { (result) in
+                switch result {
+                case .success:
+                    SVProgressHUD.showSuccess(withStatus: "注册成功")
+                    self.navigationController?.popViewController(animated: true)
+                    break
+                case .failure(let error):
+                    print(error)
+                    SVProgressHUD.showError(withStatus: error.reason)
+                }
+
+            }
+
+        }
+        
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

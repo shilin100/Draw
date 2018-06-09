@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LeanCloud
+import SVProgressHUD
 
 class ChangePSWViewController: UIViewController {
 
@@ -20,6 +22,32 @@ class ChangePSWViewController: UIViewController {
     }
 
     @IBAction func changePswAction(_ sender: Any) {
+        if oldPsw.text!.count > 0 , newPsw.text!.count > 0 , newPswAgain.text!.count > 0, newPsw.text! == newPswAgain.text!{
+            if LCUser.current == nil {
+                SVProgressHUD.showSuccess(withStatus: "修改成功")
+                self.navigationController?.popViewController(animated: true)
+                return
+            }
+            
+            let currentUser = LCUser.current!
+            
+            currentUser.updatePassword(oldPassword: oldPsw.text!, newPassword: newPsw.text!) { (result) in
+                switch result {
+                case .success:
+                    SVProgressHUD.showSuccess(withStatus: "修改成功")
+                    self.navigationController?.popViewController(animated: true)
+                    break
+                case .failure(let error):
+                    print(error)
+                    SVProgressHUD.showError(withStatus: error.reason)
+
+            }
+            
+
+        }
+
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {

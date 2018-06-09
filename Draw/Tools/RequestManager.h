@@ -37,6 +37,9 @@ typedef void(^DownloadSucceed)(NSString * filePath);
 
 @interface RequestManager : NSObject
 
+
+
+
 /**
  获取新闻
  
