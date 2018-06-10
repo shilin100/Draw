@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import LeanCloud
+import SVProgressHUD
+import SwiftyJSON
 
 class ChoosBallViewController: UIViewController {
     @IBOutlet weak var redCollectionView: UICollectionView!
     
     @IBOutlet weak var blueCollectionView: UICollectionView!
     
+    @IBOutlet weak var endDate: UILabel!
+    @IBOutlet weak var periods: UILabel!
     var selectedRed = [IndexPath]()
     var selectedBlue : IndexPath?
 
@@ -24,7 +29,9 @@ class ChoosBallViewController: UIViewController {
         
         blueCollectionView.delegate = self
         blueCollectionView.dataSource = self
-
+        
+        redRandomBtn.isHidden = true
+        blueRandom.isHidden = true
         
         let collectionLayout = UICollectionViewFlowLayout()
         collectionLayout.scrollDirection = .vertical//滚动方向
@@ -46,6 +53,32 @@ class ChoosBallViewController: UIViewController {
         redCollectionView.collectionViewLayout = collectionLayout
         blueCollectionView.collectionViewLayout = collectionLayout2
         
+        DouBanProvider.request(.ssqList) { result in
+            if case let .success(response) = result {
+                //解析数据
+                
+                let data = try? response.mapJSON()
+                if data == nil {
+                    return
+                }
+                
+                let json = JSON(data!)
+                let dic = json.dictionaryObject
+                
+                
+                let ssqDataArr = dic?["data"] as! [Dictionary<String, Any>]
+                
+                let first = ssqDataArr.first
+                self.periods.text = "\(Int(first!["expect"] as! String)!+1)"
+            }
+        }
+        var timeStamp = Date().timeIntervalSince1970
+        timeStamp =  timeStamp+(3600*24.0)
+        
+        let date = Date(timeIntervalSince1970: timeStamp)
+        self.endDate.text = SLTool.dateConvertString(date: date, dateFormat: "yyyy-MM-dd  HH:mm:ss")
+
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -57,30 +90,37 @@ class ChoosBallViewController: UIViewController {
     
     @IBAction func RedRandom(_ sender: Any) {
 
-        for index in selectedRed {
-            let cell = redCollectionView.cellForItem(at: index) as! ChooseBallCollectionViewCell
+        let temp = NSArray(array: selectedRed).mutableCopy() as! NSMutableArray
+
+        for index  in temp {
+            redCollectionView.deselectItem(at: index as! IndexPath, animated: true)
+            let cell = redCollectionView.cellForItem(at: index as! IndexPath) as! ChooseBallCollectionViewCell
             cell.circle.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.number.textColor = .black
-
-            redCollectionView.deselectItem(at: index, animated: true)
-            selectedRed.removeAll()
+            
         }
+
         
+        
+        selectedRed.removeAll()
+
         while selectedRed.count != 6 {
             let temp = Int(arc4random()%33)
             let index = IndexPath(item: temp, section: 0)
             if !selectedRed.contains(index){
                 selectedRed.append(index)
                 redCollectionView.selectItem(at: index, animated: true, scrollPosition: .centeredHorizontally)
-                let cell = redCollectionView.cellForItem(at: index) as! ChooseBallCollectionViewCell
-                cell.circle.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0.1921568627, alpha: 1)
-                cell.number.textColor = .white
-
-
+                let cell = redCollectionView.cellForItem(at: index) as? ChooseBallCollectionViewCell
+                cell?.circle.backgroundColor = #colorLiteral(red: 1, green: 0.1921568627, blue: 0.1921568627, alpha: 1)
+                cell?.number.textColor = .white
+                
+                
             }
+
         }
 
     }
+    @IBOutlet weak var redRandomBtn: UIButton!
     @IBOutlet weak var blueRandom: UIButton!
     
     @IBAction func clear(_ sender: Any) {
@@ -90,9 +130,9 @@ class ChoosBallViewController: UIViewController {
             cell.circle.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             cell.number.textColor = .black
             
-            selectedRed.removeAll()
         }
-        
+        selectedRed.removeAll()
+
         if selectedBlue != nil {
             blueCollectionView.deselectItem(at: selectedBlue!, animated: true)
             let cell = blueCollectionView.cellForItem(at: selectedBlue!) as! ChooseBallCollectionViewCell
@@ -103,6 +143,52 @@ class ChoosBallViewController: UIViewController {
         }
     }
     @IBAction func submit(_ sender: Any) {
+        
+//        AVObject *GuangZhou = [[AVObject alloc] initWithClassName:@"City"];// 广州
+//        [GuangZhou setObject:@"广州" forKey:@"name"];
+//
+//        AVObject *GuangDong = [[AVObject alloc] initWithClassName:@"Province"];// 广东
+//        [GuangDong setObject:@"广东" forKey:@"name"];
+//
+//        [GuangZhou setObject:GuangDong forKey:@"dependent"];// 为广州设置 dependent 属性为广东
+//
+//        [GuangZhou saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//            if (succeeded) {
+//            // 广州被保存成功
+//            }
+//            }];
+        
+        if selectedRed.count != 6 || selectedBlue == nil {
+            SVProgressHUD.showError(withStatus: "请选择6个红球1个蓝球后提交")
+            return
+        }
+        
+        let user = LCUser.current
+        let order = LCObject(className: "Order")
+        
+        order.set("lotteryNum1", value: "\(selectedRed[0].row+1)")
+        order.set("lotteryNum2", value: "\(selectedRed[1].row+1)")
+        order.set("lotteryNum3", value: "\(selectedRed[2].row+1)")
+        order.set("lotteryNum4", value: "\(selectedRed[3].row+1)")
+        order.set("lotteryNum5", value: "\(selectedRed[4].row+1)")
+        order.set("lotteryNum6", value: "\(selectedRed[5].row+1)")
+        order.set("lotteryNumBlue", value: "\(selectedBlue!.row+1)")
+
+        order.set("owner", value: user)
+        
+        order.save { (result) in
+            switch result {
+            case .success:
+
+                SVProgressHUD.showSuccess(withStatus: "提交成功\n您的取票号为:\(order.objectId!.stringValue ?? "4358973498")")
+                break
+            case .failure(let error):
+                print(error)
+                SVProgressHUD.showError(withStatus: error.reason)
+            }
+
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -8,11 +8,13 @@
 
 import UIKit
 import SVProgressHUD
+import LeanCloud
 
 
 class MineViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var username: UILabel!
     
     var dataArr :Array<Any>?
     
@@ -23,6 +25,12 @@ class MineViewController: UIViewController {
         [MineCellModel(title: "我的号码库", imgName: "库存分类"),MineCellModel(title: "修改密码", imgName: "修改密码")],
         [MineCellModel(title: "清除缓存", imgName: "清理"),MineCellModel(title: "关于我们", imgName: "关于我们")],
         [MineCellModel(title: "设置", imgName: "主页-设置")]]
+        
+        
+//        let user = LCUser.current
+//        username.text = user?.username?.stringValue
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -95,6 +103,12 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
             if(indexPath.row == 1){
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChangePSWViewController")
                 self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+            if(indexPath.row == 0){
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NumberLibViewController")
+                self.navigationController?.pushViewController(vc, animated: true)
+                
             }
 
             break

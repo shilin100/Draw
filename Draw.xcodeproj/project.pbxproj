@@ -16,6 +16,7 @@
 		9D1B887220B938AF00115E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1B887020B938AF00115E9F /* LaunchScreen.storyboard */; };
 		9D1B887D20B938AF00115E9F /* DrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B887C20B938AF00115E9F /* DrawTests.swift */; };
 		9D1B888820B938AF00115E9F /* DrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B888720B938AF00115E9F /* DrawUITests.swift */; };
+		9D32240520CD1A24001ADF13 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32240420CD1A24001ADF13 /* RecommendViewController.swift */; };
 		9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6420CA82AD00B03E67 /* LoginViewController.swift */; };
 		9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6620CA82C000B03E67 /* RegisterViewController.swift */; };
 		9D374F6920CA82CE00B03E67 /* ChangePSWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */; };
@@ -50,6 +51,7 @@
 		9D86A1BB20C7E84200B80056 /* NewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BA20C7E84200B80056 /* NewsRequest.swift */; };
 		9D86A1BD20C9190500B80056 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1BC20C9190400B80056 /* WebViewViewController.swift */; };
 		9D86A1C120CA547800B80056 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86A1C020CA547800B80056 /* RequestManager.m */; };
+		9DAF947120CCF3E500CA9666 /* AwardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF947020CCF3E500CA9666 /* AwardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,7 @@
 		9D1B888320B938AF00115E9F /* DrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1B888720B938AF00115E9F /* DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUITests.swift; sourceTree = "<group>"; };
 		9D1B888920B938AF00115E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D32240420CD1A24001ADF13 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		9D374F6420CA82AD00B03E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D374F6620CA82C000B03E67 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePSWViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		9D86A1BE20CA547600B80056 /* Draw-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Draw-Bridging-Header.h"; sourceTree = "<group>"; };
 		9D86A1BF20CA547700B80056 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
 		9D86A1C020CA547800B80056 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		9DAF947020CCF3E500CA9666 /* AwardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTableViewCell.swift; sourceTree = "<group>"; };
 		9E18BB591223610F2769933C /* Pods-DrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawUITests/Pods-DrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C6CB65F8CA5AC0A26C79DE0E /* Pods_DrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -325,6 +329,7 @@
 				9D86A19220C2975A00B80056 /* OrderTableViewCell.xib */,
 				9D86A1B020C7E30D00B80056 /* NewsTableViewCell.swift */,
 				9D5CA68420CBD2AF001363B3 /* ChooseBallCollectionViewCell.swift */,
+				9DAF947020CCF3E500CA9666 /* AwardTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				9D86A1BC20C9190400B80056 /* WebViewViewController.swift */,
 				9D5CA65120CBB50C001363B3 /* NumberLibViewController.swift */,
 				9D5CA68220CBD06E001363B3 /* ChoosBallViewController.swift */,
+				9D32240420CD1A24001ADF13 /* RecommendViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -655,11 +661,13 @@
 				9D5CA62F20CB7CB6001363B3 /* DSTrendChartGainListInfo.m in Sources */,
 				9D5CA63420CB7CB6001363B3 /* DSTrendChartView.m in Sources */,
 				9D5CA63220CB7CB6001363B3 /* DSView.m in Sources */,
+				9DAF947120CCF3E500CA9666 /* AwardTableViewCell.swift in Sources */,
 				9D5CA64620CB80D0001363B3 /* JAJNetwork.m in Sources */,
 				9D86A18620C1478A00B80056 /* HomeViewController.swift in Sources */,
 				9D5CA65220CBB50C001363B3 /* NumberLibViewController.swift in Sources */,
 				9D5CA63520CB7CB6001363B3 /* DSDataObject.m in Sources */,
 				9D374F6520CA82AD00B03E67 /* LoginViewController.swift in Sources */,
+				9D32240520CD1A24001ADF13 /* RecommendViewController.swift in Sources */,
 				9D374F6720CA82C000B03E67 /* RegisterViewController.swift in Sources */,
 				9D86A18A20C147AD00B80056 /* MineViewController.swift in Sources */,
 				9D5CA63020CB7CB6001363B3 /* DSTrendChartGainDataInfo.m in Sources */,

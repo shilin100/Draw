@@ -8,17 +8,18 @@
 
 import UIKit
 import SDCycleScrollView
-import RxSwift
 import Moya
 import SwiftyJSON
 import SDWebImage
 import LeanCloud
 
 class HomeViewController: UIViewController {
-    let disposeBag = DisposeBag()
     var newDataArr = [Dictionary<String, Any>]()
     var ssqDataArr = [Dictionary<String, Any>]()
-
+    @IBOutlet weak var lotteryNum: UILabel!
+    
+    @IBOutlet weak var lotteryDate: UILabel!
+    @IBOutlet weak var period: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cycleview: SDCycleScrollView!
     @IBOutlet weak var drawView: UIView!
@@ -40,6 +41,10 @@ class HomeViewController: UIViewController {
             if case let .success(response) = result {
                 //解析数据
                 let data = try? response.mapJSON()
+                if data == nil {
+                    return
+                }
+
                 let json = JSON(data!)
                 let dic = json.dictionaryObject
 
@@ -53,13 +58,30 @@ class HomeViewController: UIViewController {
             if case let .success(response) = result {
                 //解析数据
                 let data = try? response.mapJSON()
+                if data == nil {
+                    return
+                }
+
                 let json = JSON(data!)
                 let dic = json.dictionaryObject
                 
                 self.ssqDataArr = dic?["data"] as! [Dictionary<String, Any>]
                 //刷新表格数据
+                let first = self.ssqDataArr.first
+                self.period.text = "第\(Int(first!["expect"] as! String)!)期"
+                self.lotteryDate.text = first!["opentime"] as? String
                 
-
+                let lotteryNum = first!["opencode"] as? NSString
+                let arr2 = lotteryNum?.components(separatedBy: ",")
+                
+                var tempStr = ""
+                
+                for str in arr2!{
+                    tempStr.append("\(str)    ")
+                }
+                
+                self.lotteryNum.text = tempStr
+                
             }
         }
 
@@ -68,7 +90,19 @@ class HomeViewController: UIViewController {
     }
     
     
+    @IBAction func AwardNow(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 1
+        
+    }
+    @IBAction func howToPlay(_ sender: Any) {
+        let vc = WebViewViewController()
+        vc.URL = "http://tzz.zhcw.com/html/ssq/rules/index.shtml"
+       
+        vc.navigationItem.title = "玩法规则";
+        self.navigationController?.pushViewController(vc, animated: true)
 
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -122,6 +156,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
         if cell.url != nil{
             let vc = WebViewViewController()
             vc.URL = cell.url!
+            vc.navigationItem.title = "每日新闻"
             self.navigationController?.pushViewController(vc, animated: true)
 
         }
