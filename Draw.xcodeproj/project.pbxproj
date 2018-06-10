@@ -92,6 +92,7 @@
 		9D1B888720B938AF00115E9F /* DrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUITests.swift; sourceTree = "<group>"; };
 		9D1B888920B938AF00115E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D32240420CD1A24001ADF13 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		9D32240620CD27C5001ADF13 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9D374F6420CA82AD00B03E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D374F6620CA82C000B03E67 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9D374F6820CA82CE00B03E67 /* ChangePSWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePSWViewController.swift; sourceTree = "<group>"; };
@@ -380,6 +381,7 @@
 				9D86A1BF20CA547700B80056 /* RequestManager.h */,
 				9D86A1C020CA547800B80056 /* RequestManager.m */,
 				9D86A1BE20CA547600B80056 /* Draw-Bridging-Header.h */,
+				9D32240620CD27C5001ADF13 /* PrefixHeader.pch */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
